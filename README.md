@@ -11,7 +11,8 @@ Take as an example the file structure of any of my configured applications, *e.g
 To stow an application configuration folder, just run the following command and you'll see the symlinks where they should be:
 
 ```bash
-stow <application> # e.g. $ stow nvim
+stow <application>
+# Example: `stow nvim`
 ```
 
 In that way you can stow/unstow any application configuration folder you want.
