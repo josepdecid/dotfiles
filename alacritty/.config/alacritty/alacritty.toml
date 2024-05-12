@@ -10,16 +10,16 @@ TERM = "xterm-256color"
 size = 12
 
 [font.bold]
-family = "MesloLGS NF"
-style = "Bold"
+family = "JetbrainsMono Nerd Font"
+style = "SemiBold"
 
 [font.italic]
-family = "MesloLGS NF"
-style = "Italic"
+family = "JetbrainsMono Nerd Font"
+style = "Light Italic"
 
 [font.normal]
-family = "MesloLGS NF"
-style = "Regular"
+family = "JetbrainsMono Nerd Font"
+style = "Light"
 
 [[mouse.bindings]]
 action = "PasteSelection"
