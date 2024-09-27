@@ -121,6 +121,12 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:/opt/homebrew/bin"
 export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/tools"
+
+#########
+# TOOLS #
+#########
+eval "$(fzf --zsh)"
 
 #######
 # NVM #
@@ -145,34 +151,18 @@ export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
-#######
-# BUN #
-#######
-export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$PATH"
-[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
-
 ##########
 # DOCKER #
 ##########
+export PATH="/Applications/Docker.app/Contents/Resources/bin/:$PATH"
 alias dcu="docker compose up"
+alias dcb="docker compose build"
 alias dcr="docker compose run --rm"
 
-#######
-# PHP #
-#######
-export HERD_PHP_83_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/83/"
-export PATH="$HOME/Library/Application Support/Herd/bin/":$PATH
-
-##########
-# GOLANG #
-##########
-alias air='$(go env GOPATH)/bin/air'
-alias templ='$(go env GOPATH)/bin/templ'
-
-########
-# MISC #
-########
+#########
+# UTILS #
+#########
 ffmpegconvert() {
     ffmpeg -i "$1" -vcodec libx265 -crf 28 "$2"
 }
+
