@@ -22,6 +22,3 @@ elif command -v batcat >/dev/null 2>&1; then
   export MANPAGER="batcat -l man -p"
 fi
 
-# ----- PATH ----
-export PATH="$HOME/.local/bin:$PATH"
-export PATH="$PATH:/opt/homebrew/bin"

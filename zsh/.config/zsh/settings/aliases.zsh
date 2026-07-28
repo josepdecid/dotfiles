@@ -69,9 +69,6 @@ alias df='df -h'
 
 # ----- Navigation -----
 
-# -- prevents - being parsed as a flag; cd - jumps to previous directory
-alias -- -='cd -' 
-
 lf() { # zsh follow lf navigation
     tmp=$(mktemp)
     command lf -last-dir-path="$tmp" "$@"

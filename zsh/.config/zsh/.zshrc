@@ -27,16 +27,16 @@ zstyle ':completion:*' menu select
 # Make completion case-insensitive
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 
-# ----- Smart directory navigation -----
-
-eval "$(zoxide init zsh)"
-
-
 # ----- Modular config files -----
 
+source "$ZDOTDIR/settings/path.zsh"
 source "$ZDOTDIR/settings/fzf.zsh"
 source "$ZDOTDIR/settings/aliases.zsh"
 source "$ZDOTDIR/settings/bindings.zsh"
 source "$ZDOTDIR/settings/plugins.zsh"
 source "$ZDOTDIR/settings/prompt.zsh"
-source "$ZDOTDIR/settings/dev.zsh"
+
+# ----- Smart directory navigation -----
+
+eval "$(zoxide init zsh)"
+
