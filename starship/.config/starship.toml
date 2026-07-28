@@ -4,7 +4,7 @@ command_timeout = 2000
 format = """
 [ 󰘧](bg:red fg:crust)\
 $directory\
-[](bg:green fg:red)\
+[](bg:green fg:red)\
 $c\
 $rust\
 $golang\
@@ -15,14 +15,14 @@ $java\
 $kotlin\
 $haskell\
 $python\
-[](fg:green bg:yellow)\
+[](fg:green bg:yellow)\
 $git_branch\
 $git_status\
-[](fg:yellow bg:sapphire)\
-$time\
-[ ](fg:sapphire)\
-$cmd_duration\
+[](fg:yellow)\
 $fill\
+$cmd_duration\
+[](fg:sapphire)\
+$time\
 $line_break\
 $character"""
 
@@ -131,11 +131,11 @@ vimcmd_visual_symbol = '[❮](bold fg:yellow)'
 
 [cmd_duration]
 show_milliseconds = true
-format = " in $duration "
+format = "  in $duration "
 style = "bg:lavender"
 disabled = false
 show_notifications = true
-min_time_to_notify = 45000
+min_time_to_notify = 1000
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
