@@ -8,6 +8,7 @@ fi
 
 # List of directories to stow
 directories=(
+  "claude"
   "ghostty"
 	"nvim"
   "starship"
