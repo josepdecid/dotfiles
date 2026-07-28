@@ -8,9 +8,9 @@ fi
 
 # List of directories to stow
 directories=(
-	"kitty"
+  "ghostty"
 	"nvim"
-	"p10k"
+  "starship"
 	"tmux"
 	"zsh"
 )
