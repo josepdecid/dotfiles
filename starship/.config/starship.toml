@@ -2,6 +2,7 @@
 command_timeout = 2000
 
 format = """
+$line_break\
 [ 󰘧](bg:red fg:crust)\
 $directory\
 [](bg:green fg:red)\
